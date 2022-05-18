@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box ;
+}
+
+body {
+    background: #fafafa;
+    width: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container{
+    background: #fff;
+    display: flex;
+    position: fixed;
+    width: 350px;
+    height: 380px;
+    margin: 10px auto;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    border: 1px solid #dbdbdb;
+}
+
+.img_iogo{
+    width: 175px;
+    margin: 3px auto;
+    text-align: center;
+
+}
