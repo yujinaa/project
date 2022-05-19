@@ -97,3 +97,9 @@ input:nth-child(2){
     height: 70px;
     border: 1px solid #dbdbdb;
 }
+.account ul{
+    display:flex ;
+    justify-content: center;
+    padding-top: 1.5rem;
+}
+
