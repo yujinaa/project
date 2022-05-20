@@ -1,0 +1,56 @@
+*{  
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box ;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+body {
+    background: #fafafa;
+    width: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.join_container{
+    background: #fff;
+    width: 350px;
+    height: 500px;
+    border: 1px solid #dbdbdb;
+    margin-bottom: 0.6rem;
+    margin: 0 auto;
+    margin-top: 3rem;
+}
+
+.brand_logo{
+    display: block;  
+    width: 15rem;
+    margin: 0 auto;
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+
+}
+.logo li{
+    text-align: center;
+    font-weight: bold;
+    color: #918f8f;
+}
+.or_line{
+    display: flex;/*가로로*/
+    align-items: center;
+    margin: 1rem auto 0;
+    justify-content: center;
+}
+.line{
+    border-bottom: 1px solid #828181;
+    width: 6.3rem;
+}
+.text{
+    margin: 0 10px;
+    font-size: small;
+    font-weight: bold;
+    color: #828181;
+}
