@@ -99,3 +99,16 @@ input{
     font-size: medium;
     font-weight: bold;
 }
+.backTo .backToLogin{
+    display: block;
+    width: 400px;
+    height: 45px;
+    margin: 6rem auto;
+    background: #fafafa;
+    border: 1px solid #e0dfdf;
+}
+.backTo .backToLogin a{
+    color: black;
+    font-weight: bold;
+    font-size: 15px;
+}
