@@ -20,12 +20,12 @@
                 <div class="text">또는</div>
                 <div class="line"></div>
             </div>
-                <form name="join" action="join_success" method="post"> 
-                    <input class = "addEmail" type="text" placeholder="휴대폰 번호 또는 이메일 주소">
-                    <input class = "name" type="text" placeholder="성명">
+                <form name="join" action="" method="post"> <!--post :암호화방식--> 
+                    <input class = "addEmail" type="text"  placeholder="휴대폰 번호 또는 이메일 주소" >
+                    <!-- <input class = "name" type="text" placeholder="성명">
                     <input class = "id" type="text" placeholder="사용자 이름">
-                    <input class = "pw" type="password" placeholder="비밀번호">
-                    <button class = "joinBtn" type="submit"><a href="#">가입</a></button>
+                    <input class = "pw" type="password" placeholder="비밀번호"> -->
+                    <button class = "joinBtn" type="button" onclick="joinClick()"><a href="#">가입</a></button>
                 </form>
         </div>
             <div class = "account_login">
@@ -34,6 +34,6 @@
                     <li><a href="login.html">로그인</a></li>
                 </ul>
             </div>
-        <script src="js/login.js"></script>
+        <script src="js/join.js"></script>
 </body>
 </html>
