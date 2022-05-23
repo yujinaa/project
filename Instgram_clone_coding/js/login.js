@@ -7,7 +7,8 @@ btn.addEventListener("click",function(){
         document.querySelector(".loginBtn").style.background = "rgb(46, 184, 223)";
     }else{
         alert("입력해 주세요");
-        document.querySelector(".loginBtn").style.background= "default";
+        document.querySelector(".loginBtn").style.background= "default";    
     }
     return false; //경고창이 뜨면 넘어가지 않도록 설정
 });
+
