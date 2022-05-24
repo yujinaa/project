@@ -1,6 +1,6 @@
 //조건을 만족할 때만 클릭시 버튼색 변경
 const btn = document.querySelector(".loginBtn");
-btn.addEventListener("click",function(){
+btn.addEventListener("click",function(e){
     const inputId = document.querySelector('.id').value;
     const inputPw = document.querySelector('.pwd').value;
     if(inputId.includes('@') && inputPw.length > 4){
@@ -11,4 +11,5 @@ btn.addEventListener("click",function(){
     }
     return false; //경고창이 뜨면 넘어가지 않도록 설정
 });
+
 
