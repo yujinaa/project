@@ -9,19 +9,65 @@ li{
 a{
     text-decoration: none;
 }
-header{
-    background-color: white;
-    height: 65px;
-    border-bottom: 1px solid rgb(213, 213, 213);
-}
 body {
     background: #fafafa;
     width: 100%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+header{
+    background-color: white;
+    width: 100%;
+    height: 65px;
+    border-bottom: 1px solid rgb(213, 213, 213);
+}
 .logo .brand_logo{
-    width: 130px;
     height: 55px;
     padding-top: 0.5rem;
-    padding-left: 1rem;
+    padding-left: 15rem;
 }
+.other_logo{
+    float: right;
+    padding-right: 15rem;
+}
+.other_logo img{
+    width: 25px;
+    padding-top: 1.2rem;
+    margin-right: 1rem;
+}
+.other_logo li{
+    float: left;
+}
+.main_container{
+    width: 100%;
+}
+.main_container .top_Box{
+    width: 400px;
+    height: 100px;
+    margin: 2rem 20rem 1rem;
+    background: red;
+    border: 1px solid rgb(213, 213, 213);
+}
+.main_container .middle_Box{
+    width: 400px;
+    height: 500px;
+    margin: 0.5rem 20rem;
+    background: black;
+    border: 1px solid rgb(213, 213, 213);
+}
+.main_container .bottom_box{
+    width: 20px;
+    height: 100px;
+    background: blue;
+    border: 1px solid rgb(213, 213, 213);
+}
+
+/*clear:both 속성은 float속성을 해제.
+float 속성 적용시 이후에 오는 다른 요소들까지같은 속성이 전달되어 둘러싼
+형태가 되거나 영역 아래로 들어간다
+부모 태그에 class name을 주고, ::after 가상 요소 이용,*/
+.fixedclear:after{
+    content:"";
+    display: block;
+    clear: both;
+}
+
