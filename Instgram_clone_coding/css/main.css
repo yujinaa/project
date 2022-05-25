@@ -1,0 +1,27 @@
+*{  
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box ;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+header{
+    background-color: white;
+    height: 65px;
+    border-bottom: 1px solid rgb(213, 213, 213);
+}
+body {
+    background: #fafafa;
+    width: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.logo .brand_logo{
+    width: 130px;
+    height: 55px;
+    padding-top: 0.5rem;
+    padding-left: 1rem;
+}
