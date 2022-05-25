@@ -47,10 +47,36 @@ header{
     background: white;
     border: 1px solid rgb(213, 213, 213);
 }
+.main_container .middle_Top{
+    width: 400px;
+    height: 50px;
+    margin: 1.5rem 20rem 0;
+    border: 1px solid rgb(213, 213, 213);
+    background: #fafafa;
+}
+.middle_Top .my_photo{
+    width: 40px;
+    height: 40px;
+    margin: 0.2rem 0.2rem 0;
+    border-radius: 3rem;
+    float: left;
+}
+.middle_Top .my_account{
+    width: 90px;
+    padding: 0.5rem 0;
+    display: inline-block;
+}
+.middle_Top .dot{
+    width: 37px;
+    float: right;
+    margin: -2.7rem auto;
+    padding-right: 1rem;
+    
+}
 .main_container .middle_Box{
     width: 400px;
-    height: 500px;
-    margin: 0.5rem 10rem;
+    height: 400px;
+    margin: -0.5rem 10rem;
     margin-left: 20rem;
     background: white;
     border: 1px solid rgb(213, 213, 213);
