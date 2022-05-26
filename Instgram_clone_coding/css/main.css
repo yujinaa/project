@@ -52,7 +52,7 @@ header{
 }
 .main_container .middle_Top{
     width: 400px;
-    height: 50px;
+    height: 55px;
     margin: 1.5rem 20rem 0;
     background: white;
     border: 1px solid rgb(213, 213, 213);
@@ -71,11 +71,16 @@ header{
     width: 90px;
     padding: 0.5rem 0;
     display: inline-block;
+    font-weight: bold;
 }
+.middle_Top .my_account a{
+    color: black;
+}
+
 .middle_Top .dot{
     width: 37px;
     float: right;
-    margin: -2.7rem auto;
+    margin: -1.7rem auto;
     padding-right: 1rem;
     
 }
@@ -163,10 +168,38 @@ header{
 .main_container .bottom_Box{
     width: 400px;
     height: 300px;
-    margin: -45rem -30rem -6rem;
+    margin: -47.5rem -30rem -6rem;
     background: #fafafa;
-    border: 1px solid rgb(213, 213, 213);
+    border: none;
     float: right;
+}
+.bottom_Box_my_phAccount .my_photo{
+    width: 50px;
+    border-radius: 50%;
+    float: left;
+}
+.bottom_Box_my_phAccount .my_account{
+    padding: 0.9rem;
+    margin-left: 3.5rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+.bottom_Box_my_phAccount .my_account a{
+    color: black;
+}
+.reco{
+    font-size: small;
+    font-weight: bold;
+    color: #949393;
+    display: inline;
+}
+.allView{
+    border: none;
+    background:#fafafa;
+    padding-left: 14rem;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: small;
 }
 
 /*clear:both 속성은 float속성을 해제.
