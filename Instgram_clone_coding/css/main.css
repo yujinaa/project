@@ -177,6 +177,9 @@ header{
     background: white;
     text-indent: 0.5rem;
 }
+.comment_part .li{
+    overflow: scroll;
+}
 .middle_add_review .smile{
     width: 1.8rem;
     height: 1.8rem;

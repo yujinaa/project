@@ -1,15 +1,20 @@
 // const likeBtn = document.querySelector(".heartBtn");
 // // const likeCount = document.getElementsByClassName("like_count");
 // function addLike(){
-//     if(likeBtn.src.match("click")){
-//         likeBtn.src = "img/heart.png";
+//     if(likeBtn ="click"){
+//         likeBtn.textContent='xi-heart-o';
 //     }else{
-//         likeBtn.src = "img/redheart.png";
+//         likeBtn.textContent='xi-heart';
 //     }
+//     likeBtn.addEventListener("click", e => {
+//         let eheart = e.currentTarget.querySelector('.xi-heart-o')
+//         let fullheart = e.currentTarget.querySelector('.fullheart')
+
+    
+    
 
 // //         likeBtn.style.background = ''
 // //     };
-//likeBtn.addEventListener("click", addLike);
 
 // likeBtn.addEventListener("click", (event)=>{
 //     if(event.target.className == "xi-heart-o"){
