@@ -1,8 +1,54 @@
-const likeBtn = document.getElementsByClassName("heart");
-const likeCount = document.getElementsByClassName("like_count");
-function addLike() {
-    likeBtn.style.background = "red";
-}
-// likeBtn.addEventListener("click", function(){
-//     likeBtn.style.color = 'red';
+const likeBtn = document.querySelector(".heartBtn");
+// const likeCount = document.getElementsByClassName("like_count");
+function addLike(){
+    if(likeBtn.src.match("click")){
+        likeBtn.src = "img/heart.png";
+    }else{
+        likeBtn.src = "img/redheart.png";
+    }
+
+//         likeBtn.style.background = ''
+//     };
+likeBtn.addEventListener("click", addLike);
+
+// likeBtn.addEventListener("click", (event)=>{
+//     if(event.target.className == "xi-heart-o"){
+//         event.target.className = "xi-heart-o";
+//     }else if(event.target.className){
+
+//     }
+// });
+
+
+const addReview = document.getElementsByClassName(".input_review");
+// const postReviewBtn = document.getElementsByClassName(".review_upload");
+
+function uploadReview(){
+    if(addReview.value){
+        let newReview = document.createElement("li");
+        newReview.innerHTML = addReview.value;
+        addReview.appendChild(newReview);
+    }else{
+        alert("댓글이 입력되지 않았습니다");
+        addReview.value = "";
+
+    }
+};
+// function uploadReview(){
+//     if(addReview.value){
+//         let newReview = document.querySelector("newComment");
+//         newReview.innerHTML = addReview.value;
+//         addReview.appendChild(newReview);
+//     }else{
+//         alert("댓글이 입력되지 않았습니다");
+//     }
+// };
+
+// postReviewBtn.addEventListener("click", uploadReview(){
+
+//     if(addReview.value){
+//         newReview();
+//     }else{
+//     }
+
 // });

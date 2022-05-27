@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>main_page</title>
     <link rel = "stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
 </head>
 <body>
     <header class="logo fixedclear">
@@ -25,7 +26,6 @@
                     <a href="#"><img class="my_account" src="img/my_photo.jpg" alt="my_account"></a>
                 </li>
             </ul>
-            
         </div>
     </header>
     <div class="main_container">
@@ -56,16 +56,16 @@
             <div class = "review_icon">
                 <ul class="fixedclear"> <!--좋아요 부분이 아이콘 밑으로 내려가면 clear both를 주어야한다-->
                     <li>
-                        <a href="javascript:;"><img class = "heart" src="img/heart.png" alt="heart" onclick="addLike()"></a>
+                        <button class="heartBtn" onclick="addLike()"><i class="xi-heart-o xi-3x"></i></button>
                     </li>
                     <li>
-                        <a href="javascript:;"><img class = "review" src="img/review.png" alt="review"></a>
+                        <button class="spBubble"><i class="xi-speech-o xi-3x"></i></button>
                     </li>
                     <li>
-                        <a href="javascript:;"><img class = "share" src="img/share.png" alt="share"></a>
+                        <button class="send"><i class="xi-location-arrow xi-3x"></i></button>
                     </li>
                     <li>
-                        <a href="javascript:;"><img class = "bookmark" src="img/bookmark.png" alt="bookmark"></a>
+                        <button class="bookmark"><i class="xi-bookmark-o xi-3x"></i></button>
                     </li>
                 </ul>
             </div>
@@ -73,16 +73,19 @@
                 <li class="like_count">
                     좋아요 3개
                 </li>
+                <li class="newComment">
+
+                </li>
             </ul>
         </div>
         <div class="middle_add_review">
             <ul>
                 <li>
-                    <a href="#"><img class = "smile" src="img/smile.png" alt="smile"></a>
+                    <img class = "smile" src="img/smile.png" alt="smile">
                 </li>
             </ul>
-            <input class="input_review" type="text" placeholder="댓글 달기...">
-            <button class="review_upload" type="button">게시</button>
+            <input class="input_review" type="text"  placeholder="댓글 달기...">
+            <button class="review_upload" onclick="uploadReview()">게시</button>
         </div>
         <div class = "bottom_Box">
             <ul>
