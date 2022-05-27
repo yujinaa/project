@@ -171,6 +171,10 @@ header{
     border-top-left-radius: 0;
     border-top-right-radius: 0;
 }
+.comment_part .comment{
+    width: 400px;
+    height: 4.4rem;
+}
 .middle_add_review .smile{
     width: 1.8rem;
     height: 1.8rem;
@@ -190,7 +194,8 @@ header{
     float: right;
     margin: 0.3rem;
     font-weight: bold;
-    color: rgb(11, 159, 228);
+    /* color: rgb(11, 159, 228); */
+    color: rgb(199, 235, 245);
     cursor: pointer;
 }
 .main_container .bottom_Box{
