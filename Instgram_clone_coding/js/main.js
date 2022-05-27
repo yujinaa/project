@@ -1,14 +1,8 @@
-// const likeBtn = document.querySelector(".heartBtn");
 // // const likeCount = document.getElementsByClassName("like_count");
-// function addLike(){
-//     if(likeBtn ="click"){
-//         likeBtn.textContent='xi-heart-o';
-//     }else{
-//         likeBtn.textContent='xi-heart';
-//     }
-//     likeBtn.addEventListener("click", e => {
-//         let eheart = e.currentTarget.querySelector('.xi-heart-o')
-//         let fullheart = e.currentTarget.querySelector('.fullheart')
+const pushBtn = document.getElementById(".heartBtn");
+function addLike(){
+    document.getElementsByClassName(".heartBtn").innerHTML = "<i class= xi-heart xi-3x></i>";
+}
 
     
     
@@ -25,84 +19,26 @@
 // });
 
 
-// const addReview = document.getElementsByClassName(".input_review");
-// // const postReviewBtn = document.getElementsByClassName(".review_upload");
 
-// function uploadReview(){
-//     if(addReview.value){
-//         let newReview = document.createElement("li");
-//         newReview.innerHTML = addReview.value;
-//         addReview.appendChild(newReview);
-//     }else{
-//         alert("댓글이 입력되지 않았습니다");
-//         addReview.value = "";
-
-//     }
-// };
-// function uploadReview(){
-//     if(addReview.value){
-//         let newReview = document.querySelector("newComment");
-//         newReview.innerHTML = addReview.value;
-//         addReview.appendChild(newReview);
-//     }else{
-//         alert("댓글이 입력되지 않았습니다");
-//     }
-// };
-
-// postReviewBtn.addEventListener("click", uploadReview(){
-
-//     if(addReview.value){
-//         newReview();
-//     }else{
-//     }
-// };
-
-// const postReviewBtn = document.querySelector(".review_upload").value;
-
-// addReview.addEventListener("click",()=>{
-//     let addReview = document.querySelector('.input_review').value;
-//     if(addReview.length !== 0){
-//         postReviewBtn.classList.add('active')
-//     }else{
-//         postReviewBtn.classList.remove('active');
-//     }
-// })
-
-
-// const postReviewBtn = document.querySelector(".review_upload").value;
-// postReviewBtn.addEventListener('click',() => {
-//         uploadReview()
-// })
-
-// const uploadReview = () => {
-//     if(postReviewBtn.value.length == 0){
-//         return
-//     }
-//     const commentPart = document.createElement('.comment')
-//     const newComment = document.createElement('.div')
-    
-//     commentPart.classList.add('.commentPart')
-//     newComment.classList.add('.div')
-
-//     commentPart.append(newComment)
-    
-//     newComment.textContent = uploadReview.value
-
-//     uploadReview.focus()
-//     postReviewBtn.classList.remove('blue')
-//     uploadReview.value=''
-
-// }
-
+//변수 생성
 const postReviewBtn = document.querySelector(".review_upload");
 const addReview = document.querySelector('.input_review');
 const newReview = document.querySelector('.comment');
+const commenter = ['uuu', 'pdds','hooe','ddwwe'];  //db연결대신 배열로 선언
+const likeBtn = document.querySelector('li');
+//const deleteBtn = document.querySelector('li');
 
+
+//댓글 추가
 function uploadReview(){
     if(addReview.value.length > 0){
         const newComment = document.querySelector("li");
-        newComment.innerHTML = addReview.value;
+        const commentervalue = Math.floor(Math.random() * commenter.length); //배열 길이만큼 무작위로 값을 생성
+        const commenterPick = commenter[commentervalue];//무작위로 생성된 값을 고르도록
+        newComment.innerHTML =  commenterPick + addReview.value;
         newReview.appendChild(newComment);
+        // newComment.appendChild(likeBtn);
+        // likeBtn.innerHTML= '<i class="xi-heart-o"></i>';
         addReview.value="";
         addReview.focus();
     }else{
@@ -110,7 +46,7 @@ function uploadReview(){
     }
     postReviewBtn.style.color = "rgb(199, 235, 245)"; //댓글추가후 게시버튼 누르면 버튼색상 다시 초기화
 }
-
+//댓글 입력창에 입력이 될 경우에 버튼 활성화
 function inputReview(){
     if(addReview.value.length>0){
         postReviewBtn.style.color = "rgb(11, 159, 228)";
@@ -118,3 +54,4 @@ function inputReview(){
         postReviewBtn.style.color = "rgb(199, 235, 245)";
     }
 }
+

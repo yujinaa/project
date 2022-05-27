@@ -55,8 +55,7 @@
         <div class="middle_review">
             <div class = "review_icon">
                 <ul class="fixedclear"> <!--좋아요 부분이 아이콘 밑으로 내려가면 clear both를 주어야한다-->
-                    <li>
-                        <button class="heartBtn" onclick="addLike()"><i class=" xi-heart-o xi-3x"></i></button>
+                    <li class="heartBtn" onclick="addLike()"><i class=" xi-heart-o xi-3x"></i>
                     </li>
                     <li>
                         <button class="spBubble"><i class="xi-speech-o xi-3x"></i></button>
@@ -78,7 +77,10 @@
             <div>
                 <ul>
                     <li class="li">
-                        <div class="comment"></div>
+                        <div>
+                            <div class="comment"></div>
+                            <!-- <button class="likeHeart"><i class="xi-heart-o"></i></button> -->
+                        </div>
                     </li>
                 </ul>
             </div>

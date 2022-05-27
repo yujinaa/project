@@ -172,14 +172,23 @@ header{
     border-top-right-radius: 0;
 }
 .comment_part .comment{
-    width: 400px;
+    width: 390px;
     height: 4.4rem;
     background: white;
     text-indent: 0.5rem;
+    display: inline;
+}
+.comment_part .likeHeart{
+    width: 50px;
+    height: 30px;
+    float: right;
+    background: none;
+    border: none;
 }
 
-.comment_part .li{/*추가 댓글이 많아지면 scroll로 넘겨볼 수 있도록*/
-    overflow: scroll;
+
+.comment_part .li{/*추가 댓글이 많아지면 스크롤바 생성*/
+    overflow: auto;
 }
 .middle_add_review .smile{
     width: 1.8rem;
