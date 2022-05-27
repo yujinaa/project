@@ -100,10 +100,20 @@ const newReview = document.querySelector('.comment');
 
 function uploadReview(){
     if(addReview.value.length > 0){
-        const newComment = document.querySelector("li"); 
+        const newComment = document.querySelector("li");
         newComment.innerHTML = addReview.value;
         newReview.appendChild(newComment);
         addReview.value="";
+        addReview.focus();
+    }else{
+        alert('댓글을 입력해 주세요');
+    }
+}
 
+function inputReview(){
+    if(addReview.value.length>0){
+        postReviewBtn.style.color = "rgb(11, 159, 228)";
+    }else{
+        postReviewBtn.style.color = "rgb(199, 235, 245)";
     }
 }

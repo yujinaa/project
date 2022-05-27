@@ -177,7 +177,8 @@ header{
     background: white;
     text-indent: 0.5rem;
 }
-.comment_part .li{
+
+.comment_part .li{/*추가 댓글이 많아지면 scroll로 넘겨볼 수 있도록*/
     overflow: scroll;
 }
 .middle_add_review .smile{
