@@ -174,6 +174,8 @@ header{
 .comment_part .comment{
     width: 400px;
     height: 4.4rem;
+    background: white;
+    text-indent: 0.5rem;
 }
 .middle_add_review .smile{
     width: 1.8rem;

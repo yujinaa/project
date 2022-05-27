@@ -52,24 +52,53 @@
 //     }
 // };
 
-const postReviewBtn = document.querySelector(".review_upload").value;
+// const postReviewBtn = document.querySelector(".review_upload").value;
 
-addReview.addEventListener("click",()=>{
-    let addReview = document.querySelector('.input_review').value;
-    if(addReview.length !== 0){
-        postReviewBtn.classList.add('active')
-    }else{
-        postReviewBtn.classList.remove('active');
-    }
-})
-postReviewBtn.addEventListener("click",()=>{
-        uploadReview();
-})
+// addReview.addEventListener("click",()=>{
+//     let addReview = document.querySelector('.input_review').value;
+//     if(addReview.length !== 0){
+//         postReviewBtn.classList.add('active')
+//     }else{
+//         postReviewBtn.classList.remove('active');
+//     }
+// })
 
-const uploadReview = () => {
-    if(postReviewBtn.value.length == 0){
-        return
-    }
 
+// const postReviewBtn = document.querySelector(".review_upload").value;
+// postReviewBtn.addEventListener('click',() => {
+//         uploadReview()
+// })
+
+// const uploadReview = () => {
+//     if(postReviewBtn.value.length == 0){
+//         return
+//     }
+//     const commentPart = document.createElement('.comment')
+//     const newComment = document.createElement('.div')
     
+//     commentPart.classList.add('.commentPart')
+//     newComment.classList.add('.div')
+
+//     commentPart.append(newComment)
+    
+//     newComment.textContent = uploadReview.value
+
+//     uploadReview.focus()
+//     postReviewBtn.classList.remove('blue')
+//     uploadReview.value=''
+
+// }
+
+const postReviewBtn = document.querySelector(".review_upload");
+const addReview = document.querySelector('.input_review');
+const newReview = document.querySelector('.comment');
+
+function uploadReview(){
+    if(addReview.value.length > 0){
+        const newComment = document.querySelector("li"); 
+        newComment.innerHTML = addReview.value;
+        newReview.appendChild(newComment);
+        addReview.value="";
+
+    }
 }
