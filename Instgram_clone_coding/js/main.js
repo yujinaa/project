@@ -39,7 +39,7 @@ function uploadReview(){
         newComment.innerHTML =  commenterPick + " " + addReview.value;
         //const likeBtn = document.querySelector('.likeHeart');
         newReview.appendChild(newComment);
-        newReview.appendChild(deleteBtn);
+        newComment.appendChild(deleteBtn);
         //newReview.appendChild(likeBtn);
         newReview.style.fontSize ='small';
         deleteBtn.addEventListener("click",removeComm);

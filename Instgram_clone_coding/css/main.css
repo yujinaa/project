@@ -247,7 +247,7 @@ header{
 }
 .main_container .bottom_Box{
     width: 400px;
-    height: 300px;
+    height: 500px;
     margin: -47.5rem -30rem -6rem;
     background: #fafafa;
     border: none;
@@ -272,6 +272,100 @@ header{
     font-weight: bold;
     color: #949393;
     display: inline;
+}
+.profileImg1{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    float: left;
+    margin: 1.5rem 0.5rem 1rem;
+}
+.profileName1{
+    margin-top:1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    float: left;
+}
+.recommUser1{
+    font-size: small;
+    color: #949393;
+    margin-top: 3rem;
+    margin-left: -4.6rem;
+    float: left;
+    font-weight: bold;
+}
+.follow1{
+    float: right;
+    border: none;
+    background:#fafafa;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: small;
+    margin: 2.2rem 0.5rem 1rem;
+    color: rgb(25, 125, 188);
+    font-weight: bold;
+}
+.profileImg2{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 6rem -10.5rem 1rem;
+    float: left;
+}
+.profileName2{
+    margin-top:6rem;
+    margin: 6rem -7rem;
+    font-weight: bold;
+    cursor: pointer;
+    float: left;
+}
+.recommUser2{
+    font-size: small;
+    color: #949393;
+    margin-top: 7.3rem;
+    margin-left: -7rem;
+    float: left;
+    font-weight: bold;
+}
+.follow2{
+    border: none;
+    background:#fafafa;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: small;
+    margin: 2rem 0rem 3rem 7.1rem;
+    color: rgb(25, 125, 188);
+    font-weight: bold;
+}
+.profileImg3{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 6rem -14.4rem 1rem;
+    float: left;
+}
+.profileName3{
+    margin: 6rem -10.9rem 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    float: left;
+}
+.recommUser3{
+    font-size: small;
+    color: #949393;
+    margin : 1.3rem 4rem ;
+    float: left;
+    font-weight: bold;
+}
+.follow3{
+    border: none;
+    background:#fafafa;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: small;
+    margin-left: 3.2rem;
+    color: rgb(25, 125, 188);
+    font-weight: bold;
 }
 .allView{
     border: none;
