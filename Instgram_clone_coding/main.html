@@ -50,37 +50,42 @@
             </ul>
         </div>
         <div class="middle_Box">
-
+            <img class = "photo" src="img/photo.jpg" alt="photo">
         </div>
         <div class="middle_review">
             <div class = "review_icon">
                 <ul class="fixedclear"> <!--좋아요 부분이 아이콘 밑으로 내려가면 clear both를 주어야한다-->
-                    <li class="heartBtn" onclick="addLike()"><i class=" xi-heart-o xi-3x"></i>
+                    <button class="heartBtn" onclick="addLike()"><i class=" xi-heart-o xi-2x"></i>
+                    </button>
+                    <li>
+                        <button class="spBubble"><i class="xi-speech-o xi-2x"></i></button>
                     </li>
                     <li>
-                        <button class="spBubble"><i class="xi-speech-o xi-3x"></i></button>
+                        <button class="send"><i class="xi-location-arrow xi-2x"></i></button>
                     </li>
                     <li>
-                        <button class="send"><i class="xi-location-arrow xi-3x"></i></button>
-                    </li>
-                    <li>
-                        <button class="bookmark"><i class="xi-bookmark-o xi-3x"></i></button>
+                        <button class="bookmark"><i class="xi-bookmark-o xi-2x"></i></button>
                     </li>
                 </ul>
             </div>
             <div class="comment_part">
             <ul>
                 <li class="like_count">
-                    좋아요 3개
+                    좋아요 1324개
                 </li>
             </ul>
             <div>
                 <ul>
                     <li class="li">
                         <div>
-                            <div class="comment"></div>
-                            <!-- <button class="likeHeart"><i class="xi-heart-o"></i></button> -->
+                            <div class="comment">
+                                <span class="user">heewo</span>
+                                <span class="userComment">멋지네!!</span>
+                                <button class="likeHeart" onclick="pushHeart()"><i class="xi-heart-o"></i></button>
+                                <button class="removeComment" onclick="removeComm()"><i class="xi-trash-o"></i></button>
+                            </div>
                         </div>
+                        <time class="before">1일전</time>
                     </li>
                 </ul>
             </div>
