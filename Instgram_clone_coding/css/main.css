@@ -50,6 +50,41 @@ header{
     border: 1px solid rgb(213, 213, 213);
     border-radius: 5px;
 }
+.top_Box .top_photo{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin: 1.8rem;
+    float: left;
+}
+.top_photo .topUser li{
+    margin: 1.1rem 1.1rem 3rem 3rem;
+    color: black;
+}
+.top_Box .top_photo2{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin: 0.7rem;
+    float: left;
+}
+.topUser2{
+    margin: -1.1rem 1.1rem ;
+    color: black;
+    float: left;
+
+}
+.top_Box .top_photo3{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin: 0.7rem;
+}
+.topUser3{
+    margin: -1.1rem 1.1rem ;
+    color: black;
+
+}
 .main_container .middle_Top{
     width: 400px;
     height: 55px;
