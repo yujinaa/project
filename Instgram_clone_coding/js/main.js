@@ -1,17 +1,13 @@
 const pushHeartBtn = document.querySelector(".heartBtn");
 function addLike(){
-    if(pushHeartBtn){
         pushHeartBtn.innerHTML ='<i class="xi-heart xi-2x"></i>';
+        // pushHeartBtn.innerHTML ='<i class="xi-heart-o xi-2x"></i>';
         pushHeartBtn.style.color ='red';
-        pushHeartBtn
-    }else{
-        pushHeartBtn.innerHTML='<i class=" xi-heart-o xi-2x">';
-    }
-
-    }
+}
 // function addCancel(){
-//     pushHeartBtn.innerHTML ='<i class=" xi-heart-o xi-2x"></i>';
-// }
+//     if(pushHeartBtn){
+//     }
+
 // pushHeartBtn.addEventListener("click", function(){
 //     pushHeartBtn.innerHTML ='<i class="xi-heart xi-2x"></i>'
 //     pushHeartBtn.style.color ='red'
@@ -26,29 +22,20 @@ const postReviewBtn = document.querySelector(".review_upload");
 const addReview = document.querySelector('.input_review');
 const newReview = document.querySelector('.comment');
 const commenter = ['uuu', 'pdds','hooe','ddwwe'];  //db연결대신 배열로 선언
-//const deleteBtn = document.querySelector('li');
+const deleteBtn = document.querySelector('.removeComment');
+const likeBtn = document.querySelector('.likeHeart');
 
 
 //댓글 추가
 function uploadReview(){
     if(addReview.value.length > 0){
         const newComment = document.createElement("li");
-        const deleteBtn = document.createElement('removeComment');
         const commentervalue = Math.floor(Math.random() * commenter.length); //배열 길이만큼 무작위로 값을 생성
         const commenterPick = commenter[commentervalue];//무작위로 생성된 값을 고르도록
-        newComment.innerHTML =  commenterPick + " " + addReview.value;
-        //const likeBtn = document.querySelector('.likeHeart');
+        newComment.innerHTML =  commenterPick + " " + addReview.value +' ' +deleteBtn.innerHTML +likeBtn.innerHTML;
+        
         newReview.appendChild(newComment);
-        newComment.appendChild(deleteBtn);
-        //newReview.appendChild(likeBtn);
         newReview.style.fontSize ='small';
-        deleteBtn.addEventListener("click",removeComm);
-
-        //const likeBtn = document.querySelector('.likeHeart');
-        //likeBtn.innerHTML='<i class="xi-heart-o"></i>';
-        //newComment.add(newReview);
-        //newReview.add(likeBtn);
-        //newReview.appendChild(likeBtn);
         
         addReview.value="";
         addReview.focus();
@@ -75,11 +62,7 @@ function pushHeart(){
         likeBtn.innerHTML='';
     }
 }
-
 //댓글 삭제
-function removeComm(e){
-    const oneComment = e.target.parentElement;
-    oneComment.remove();
+function removeComm(){
+    newReview.remove();
 }
-
-

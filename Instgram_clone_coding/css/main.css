@@ -42,48 +42,43 @@ header{
 .other_logo .icon li{
     float: left;
 }
-.main_container .top_Box{
+.main_container .top_Box {
     width: 400px;
     height: 100px;
     margin: 2rem 20rem 1rem;
     background: white;
     border: 1px solid rgb(213, 213, 213);
     border-radius: 5px;
+    
 }
 .top_Box .top_photo{
-    width: 60px;
-    height: 60px;
+    width: 70px;
+    height: 70px;
     border-radius: 50%;
-    margin: 1.8rem;
+    margin: 0.8rem;
     float: left;
 }
-.top_photo .topUser li{
-    margin: 1.1rem 1.1rem 3rem 3rem;
-    color: black;
-}
+
 .top_Box .top_photo2{
-    width: 60px;
-    height: 60px;
+    width: 70px;
+    height: 70px;
     border-radius: 50%;
-    margin: 0.7rem;
+    margin: 0.8rem;
     float: left;
 }
-.topUser2{
-    margin: -1.1rem 1.1rem ;
-    color: black;
-    float: left;
 
-}
 .top_Box .top_photo3{
-    width: 60px;
-    height: 60px;
+    width: 70px;
+    height: 70px;
     border-radius: 50%;
-    margin: 0.7rem;
+    margin: 0.8rem;
+    float: left;
 }
-.topUser3{
-    margin: -1.1rem 1.1rem ;
-    color: black;
-
+.top_Box .top_photo4{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin: 0.8rem;
 }
 .main_container .middle_Top{
     width: 400px;
@@ -239,6 +234,7 @@ header{
     cursor: pointer;
     padding-left:4rem;
 }
+
 .li{/*추가 댓글이 많아지면 스크롤바 생성*/
     height: 90px;
     overflow: auto;
