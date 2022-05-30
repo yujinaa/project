@@ -1,11 +1,11 @@
 //게시글 좋아요 
 function addLike(){
     const pushHeartBtn = document.querySelector(".heartBtn");
-    
-        pushHeartBtn.innerHTML ='<i class="xi-heart xi-2x"></i>';
-        pushHeartBtn.style.color ='red'; 
+            pushHeartBtn.innerHTML ='<i class="xi-heart xi-2x"></i>';
+            pushHeartBtn.style.color ='red'; 
+
+            pushHeartBtn.addEventListener("click",countPlus);
         //pushHeartBtn.innerHTML ='<i class="xi-heart xi-2x-o "></i>';
-        pushHeartBtn.addEventListener("click",countPlus);
 
 }
 
@@ -22,8 +22,6 @@ const postReviewBtn = document.querySelector(".review_upload");
 const addReview = document.querySelector('.input_review');
 const newReview = document.querySelector('.comment');
 const commenter = ['uuu', 'pdds','hooe','ddwwe'];  //db연결대신 배열로 선언
-// const deleteBtn = document.querySelector('.removeComment');
-// const likeBtn = document.querySelector('.likeHeart');
 
 
 //게시 버튼 클릭시 댓글 추가
