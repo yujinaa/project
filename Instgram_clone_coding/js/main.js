@@ -5,8 +5,6 @@ function addLike(){
             pushHeartBtn.style.color ='red'; 
 
             pushHeartBtn.addEventListener("click",countPlus);
-        //pushHeartBtn.innerHTML ='<i class="xi-heart xi-2x-o "></i>';
-
 }
 
 //게시글 좋아요 클릭시 조회수 증가
@@ -68,7 +66,6 @@ function uploadReview(){
         alert('댓글을 입력해 주세요');
     }
     postReviewBtn.style.color = "rgb(199, 235, 245)"; //댓글추가후 게시버튼 누르면 버튼색상 다시 초기화
-
 }
 
 //엔터키로 댓글 추가
@@ -88,12 +85,4 @@ function inputReview(){
     }
 }
 
-
-// likeBtn.addEventListener("click", e=> {
-//     if(event.target.className == '<i class="xi-heart"></i>'){
-//         event.target.className = '<i class="xi-heart"></i>';
-//     } else if(event.target.className == '<i class="xi-heart-o"></i>'){
-//         event.target.className = '<i class="xi-heart-o"></i>';     
-//     }
-// });
 
