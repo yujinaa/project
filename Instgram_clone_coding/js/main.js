@@ -1,3 +1,4 @@
+//게시글 좋아요 
 const pushHeartBtn = document.querySelector(".heartBtn");
 function addLike(){
         pushHeartBtn.innerHTML ='<i class="xi-heart xi-2x"></i>';
@@ -26,7 +27,7 @@ const deleteBtn = document.querySelector('.removeComment');
 const likeBtn = document.querySelector('.likeHeart');
 
 
-//댓글 추가
+//게시 버튼 클릭시 댓글 추가
 function uploadReview(){
     if(addReview.value.length > 0){
         const newComment = document.createElement("li");
@@ -44,6 +45,16 @@ function uploadReview(){
     }
     postReviewBtn.style.color = "rgb(199, 235, 245)"; //댓글추가후 게시버튼 누르면 버튼색상 다시 초기화
 }
+
+//엔터키로 댓글 추가
+addReview.addEventListener("keypress",(e) => {
+    if(e.keyCode === 10){
+        if(addReview.value.length !== 0){
+        uploadReview();
+        }
+    }
+});
+
 //댓글 입력창에 입력이 될 경우에 버튼 활성화
 function inputReview(){
     if(addReview.value.length>0){
