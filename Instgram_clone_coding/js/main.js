@@ -59,8 +59,8 @@ function uploadReview(){
                 likeBtn.innerHTML='';
             }
         }
+        //댓글 삭제
         function removeComm(){
-    
             newComment.remove();
         }
 
@@ -73,12 +73,11 @@ function uploadReview(){
 
 //엔터키로 댓글 추가
 addReview.addEventListener("keypress",(e) => {
-    if(e.keyCode === 10){
         if(addReview.value.length !== 0){
         uploadReview();
         }
     }
-});
+);
 
 //댓글 입력창에 입력이 될 경우에 버튼 활성화
 function inputReview(){
