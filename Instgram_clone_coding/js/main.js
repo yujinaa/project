@@ -1,18 +1,20 @@
 //게시글 좋아요 
-const pushHeartBtn = document.querySelector(".heartBtn");
 function addLike(){
+    const pushHeartBtn = document.querySelector(".heartBtn");
+    
         pushHeartBtn.innerHTML ='<i class="xi-heart xi-2x"></i>';
-        // pushHeartBtn.innerHTML ='<i class="xi-heart-o xi-2x"></i>';
-        pushHeartBtn.style.color ='red';
+        pushHeartBtn.style.color ='red'; 
+        //pushHeartBtn.innerHTML ='<i class="xi-heart xi-2x-o "></i>';
+        pushHeartBtn.addEventListener("click",countPlus);
+
 }
 
-// pushHeartBtn.addEventListener("click", function(){
-//     pushHeartBtn.innerHTML ='<i class="xi-heart xi-2x"></i>'
-//     pushHeartBtn.style.color ='red'
-// })
-// pushHeartBtn.removeEventListener("click",function(){
-//     pushHeartBtn.innerHTML ='<i class=" xi-heart-o xi-2x"></i>';
-// })
+//게시글 좋아요 클릭시 조회수 증가
+var count = 1324;
+function countPlus(){
+        count=count+1;
+        document.querySelector(".like_count").innerHTML="좋아요 "+count +"개";
+    }
 
 
 //변수 생성
