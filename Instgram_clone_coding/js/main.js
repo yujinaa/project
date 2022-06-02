@@ -68,7 +68,7 @@ function uploadReview(){
 }
 
 //엔터키로 댓글 추가
-addReview.addEventListener("keypress",(e) => {
+addReview.addEventListener("keypress",(e) => {//현재는 keypress를 지양한다고 하니 사용하지말자!
         if(addReview.value.length !== 0){
         uploadReview();
         }
