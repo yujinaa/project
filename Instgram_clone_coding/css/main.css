@@ -128,7 +128,6 @@ header{
 .middle_Box .photo{
     width: 398px;
     height: 400px;
-    /* border-right: 1px solid rgb(213, 213, 213); */
 }
 .middle_review{
     width: 400px;
@@ -237,8 +236,7 @@ header{
 
 .li{/*추가 댓글이 많아지면 스크롤바 생성*/
     height: 90px;
-    overflow: auto;
-    
+    overflow: auto; 
 }
 .user{
     margin-left: 0.5rem;
@@ -272,7 +270,6 @@ header{
     float: right;
     margin: 0.3rem;
     font-weight: bold;
-    /* color: rgb(11, 159, 228); */
     color: rgb(199, 235, 245);
     cursor: pointer;
 }
